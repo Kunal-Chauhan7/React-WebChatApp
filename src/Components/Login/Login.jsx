@@ -27,8 +27,9 @@ const Login = () => {
             <div className="item">
             <h2>Create An Account</h2>
                 <form>
-                    <img src={avatar.url||"./assets/avatar.png"} alt="" srcset="" />
-                    <label htmlFor="file">Upload an Image
+                    <label htmlFor="file">
+                    <img src={avatar.url||"./assets/avatar.png"} alt="" className='userImg' />
+                        Upload an Image
                     </label>
                     <input type="file" id="file"  style={{display:'none'}} onChange={handelAvatar}/>
                     <input type="text" placeholder='Username' name='username' />

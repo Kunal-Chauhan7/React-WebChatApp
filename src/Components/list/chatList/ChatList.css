@@ -4,107 +4,107 @@
     scroll-behavior: smooth;
     position: relative;
     padding-top: 20px;
+}
 
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 20px;
-        pointer-events: none;
-    }
+.chatList::before,
+.chatList::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20px;
+    pointer-events: none;
+}
 
-    &::before {
-        top: 0;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
-    }
+.chatList::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
 
-    &::after {
-        bottom: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    }
+.chatList::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
 
-    &::-webkit-scrollbar {
-        width: 8px;
-    }
+.chatList::-webkit-scrollbar {
+    width: 8px;
+}
 
-    &::-webkit-scrollbar-thumb {
-        background-color: rgba(17, 25, 40, 0.5);
-        border-radius: 10px;
-    }
+.chatList::-webkit-scrollbar-thumb {
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 10px;
+}
 
-    &::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(17, 25, 40, 0.8);
-    }
+.chatList::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(17, 25, 40, 0.8);
+}
 
-    .search {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
+.chatList .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
-        .searchBar {
-            flex: 1;
-            background-color: rgba(17, 25, 40, 0.5);
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border-radius: 10px;
-            padding: 10px;
-            
-            input {
-                background-color: transparent;
-                border: none;
-                outline: none;
-                color: white;
-                flex: 1;
-            }
+.chatList .search .searchBar {
+    flex: 1;
+    background-color: rgba(17, 25, 40, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
 
-            img {
-                width: 20px;
-                height: 20px;
-            }
-        }
+.chatList .search .searchBar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+}
 
-        .add {
-            width: 36px;
-            height: 36px;
-            background-color: rgba(17, 25, 40, 0.5);
-            padding: 10px;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-    }
+.chatList .search .searchBar img {
+    width: 20px;
+    height: 20px;
+}
 
-    .item {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-        cursor: pointer;
-        border-bottom: 1px solid #dddddd35;
+.chatList .search .add {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(17, 25, 40, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-        img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+.chatList .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.21);
+}
 
-        .texts {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+.chatList .item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-            span {
-                font-weight: 500;
-            }
+.chatList .item .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-            p {
-                font-size: 14px;
-                font-weight: 300;
-            }
-        }
-    }
+.chatList .item .texts span {
+    font-weight: 500;
+}
+
+.chatList .item .texts p {
+    font-size: 14px;
+    font-weight: 300;
 }

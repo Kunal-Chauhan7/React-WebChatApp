@@ -4,7 +4,7 @@ import List from "./Components/list/List";
 import Login from "./Components/Login/Login";
 import Notification from "./Components/Notification/Notification";
 
-const user = true
+const user = false
 
 function App() {
   return (
